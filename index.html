@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RGN Serviços Terceirizados – Soluções em limpeza, portaria, segurança e manutenção predial. Eficiência, confiança e qualidade para sua empresa.">
+    <meta name="keywords" content="serviços terceirizados, limpeza, portaria, segurança, manutenção predial, São Paulo">
+    <meta name="author" content="RGN Serviços Terceirizados">
+    <meta name="theme-color" content="#0B1F3A">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rgn-servicos.com.br/">
+    <meta property="og:title" content="RGN – Soluções Terceirizadas para Sua Empresa">
+    <meta property="og:description" content="Limpeza, portaria, segurança, manutenção predial e apoio administrativo com eficiência e qualidade.">
+    <meta property="og:image" content="https://rgn-servicos.com.br/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rgn-servicos.com.br/">
+    <meta name="twitter:title" content="RGN – Soluções Terceirizadas para Sua Empresa">
+    <meta name="twitter:description" content="Limpeza, portaria, segurança, manutenção predial e apoio administrativo com eficiência e qualidade.">
+    <meta name="twitter:image" content="https://rgn-servicos.com.br/og-image.png">
+    
+    <title>RGN – Soluções Terceirizadas | Limpeza, Portaria, Segurança</title>
+    
+    <!-- Favicon (SVG inline data URL) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230B1F3A' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='60' font-weight='bold' fill='%2316A34A' text-anchor='middle' font-family='Arial'%3ERGN%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Tag Manager placeholder -->
+    <!-- GTM: Inserir código de container do GTM aqui -->
+    
+    <style>
+        /* ========== RESET E VARIÁVEIS ========== */
+        :root {
+            --color-primary: #000000;
+            --color-primary-dark: #ffffff;
+            --color-accent: #0B1F3A;
+            --color-accent-hover: #15803D;
+            --color-text-dark: #111827;
+            --color-text-gray: #6B7280;
+            --color-bg-light: #F3F4F6;
+            --color-bg-white: #FFFFFF;
+            --color-border: #E5E7EB;
+            --color-error: #DC2626;
+            --color-success: #16A34A;
+            
+            --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+            --font-size-base: 16px;
+            --line-height-base: 1.6;
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+            color: var(--color-text-dark);
+            background-color: var(--color-bg-white);
+            overflow-x: hidden;
+        }
+        
+        /* ========== TIPOGRAFIA ========== */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-primary);
+        }
+        
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+        h4 { font-size: 1.25rem; }
+        h5 { font-size: 1.125rem; }
+        h6 { font-size: 1rem; }
+        
+        p {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text-gray);
+        }
+        
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline;
+        }
+        
+        a:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+            border-radius: var(--radius-sm);
+        }
+        
+        /* ========== LAYOUT PRINCIPAL ========== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(22, 163, 74, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        header.scrolled nav a {
+            color: #16A34A;
+        }
+        
+        header.scrolled .logo {
+            color: #16A34A;
+        }
+        
+        header.scrolled .nav-toggle {
+            color: #16A34A;
+        }
+        
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-bg-white);
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            color: var(--color-accent);
+        }
+        
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+            font-size: 0.625rem;
+            font-weight: 700;
+            color: var(--color-bg-white);
+            text-align: center;
+            padding: 0.25rem;
+        }
+        
+        nav {
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: var(--color-bg-white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+        
+        nav a:hover {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        
+        nav a:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 4px;
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-bg-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: var(--spacing-xs);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        
+        .nav-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-toggle:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+        
+        .header-cta {
+            flex-shrink: 0;
+        }
+        
+        main {
+            margin-top: 70px;
+        }
+        
+        section {
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background-color: #16A34A;
+            color: var(--color-bg-white);
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+        
+        /* ========== BOTÕES ========== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-xs);
+            padding: 0.75rem 1.5rem;
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            white-space: nowrap;
+            font-family: var(--font-family);
+        }
+        
+        .btn:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-bg-white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-accent-hover);
+            text-decoration: none;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--color-accent);
+            color: var(--color-bg-white);
+            text-decoration: none;
+        }
+        
+        .btn-white {
+            background-color: var(--color-bg-white);
+            color: var(--color-primary);
+        }
+        
+        .btn-white:hover {
+            background-color: var(--color-bg-light);
+            text-decoration: none;
+        }
+        
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+        
+        /* ========== HERO ========== */
+        .hero {
+    background: url("IMAGENS/BG.jpg") center/cover no-repeat;
+    min-height: 650px; /* altura padrão hero */
+    display: flex;
+    align-items: center;
+}
+.hero-content {
+    width: 100%;
+    max-width: 900px; /* ajustável */
+    margin: 0 auto;
+    text-align: center;      /* CENTRALIZA TEXTO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* CENTRALIZA itens horizontalmente */
+    justify-content: center; /* CENTRALIZA verticalmente (se tiver altura) */
+}
+
+
+        /* Centralizar conteúdo do HERO */
+/* Título do HERO */
+.hero-content h1 {
+    color: #ffffff;            /* 100% branco */
+    font-size: 3.2rem;         /* maior */
+    font-weight: 1000;          /* mais forte */
+    text-shadow: 0px 3px 10px rgba(255, 255, 255, 0.35); /* melhora legibilidade */
+    margin-bottom: 1rem;
+}
+
+/* Subtítulo / frase */
+.hero-content p {
+    color: #ffffff;            /* 100% branco também */
+    font-size: 1.35rem;        /* mais legível */
+    font-weight: 1000;          /* fino e elegante */
+    text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.35); /* melhora contraste */
+    margin-bottom: 2rem;
+}
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        .hero-image {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+        }
+        
+        .hero-svg {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+        }
+        
+        /* ========== CARDS ========== */
+        .card {
+            background-color: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            border-color: var(--color-accent);
+        }
+        
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .card h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .card li {
+            padding-left: 1.5rem;
+            margin-bottom: var(--spacing-xs);
+            position: relative;
+            color: var(--color-text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        
+        /* ========== GRID ========== */
+        .grid {
+            display: grid;
+            gap: var(--spacing-lg);
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        /* ========== SEÇÕES ========== */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .section-header h2 {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-header p {
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.8;
+        }
+        
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+        }
+        
+        .pillar {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg-light);
+            border-radius: var(--radius-lg);
+        }
+        
+        .pillar-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--spacing-md);
+        }
+        
+        .pillar h4 {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .pillar p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        /* ========== CARROSSEL ========== */
+        .carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+        }
+        
+        .carousel-item {
+            display: none;
+            width: 100%;
+            padding: var(--spacing-2xl);
+            background-color: var(--color-bg-light);
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .carousel-item blockquote {
+            font-size: 1.125rem;
+            font-style: italic;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-dark);
+        }
+        
+        .carousel-item .author {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        
+        .carousel-item .role {
+            font-size: 0.95rem;
+            color: var(--color-text-gray);
+        }
+        
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .carousel-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--color-accent);
+            background-color: transparent;
+            color: var(--color-accent);
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carousel-btn:hover {
+            background-color: var(--color-accent);
+            color: var(--color-bg-white);
+        }
+        
+        .carousel-btn:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        /* ======== CARROSSEL DE LOGOS (EMPRESAS) ======== */
+
+.empresas-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.empresas-section h2 {
+    margin-bottom: 2rem;
+}
+
+.logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 3rem;
+    animation: scrollLogos 18s linear infinite;
+    white-space: nowrap;
+}
+
+.logo-track a img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(1) contrast(1.2);
+    transition: transform .3s ease;
+}
+
+.logo-track a:hover img {
+    transform: scale(1.15);
+}
+
+@keyframes scrollLogos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+/* ======== CARROSSEL DE LOGOS ======== */
+
+.logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 3rem;
+    animation: scrollLogos 45s linear infinite; /* ← aqui ajusta a velocidade */
+    white-space: nowrap;
+}
+
+.logo-track a img {
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(1) contrast(1.15);
+    transition: transform .3s ease;
+}
+
+.logo-track a:hover img {
+    transform: scale(1.15);
+}
+
+.logo-marquee .logo-track{
+  display: flex;
+  gap: 3rem;
+  /* deixe a duração maior para ficar mais lento */
+  animation: scroll 180s linear infinite;   /* 120s, 150s, 180s... */
+  width: max-content;
+}
+@keyframes scroll{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* -50% se você duplicou a lista para loop perfeito */
+}
+
+
+        
+        /* ========== CTA FAIXA ========== */
+        .cta-banner {
+            background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);
+            color: var(--color-bg-white);
+            text-align: center;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+            margin: var(--spacing-2xl) 0;
+        }
+        
+        .cta-banner h2 {
+            color: var(--color-bg-white);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        /* ========== FORMULÁRIO ========== */
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+            color: var(--color-text-dark);
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            font-family: var(--font-family);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+        }
+        
+        input[type="text"].error,
+        input[type="email"].error,
+        input[type="tel"].error,
+        select.error,
+        textarea.error {
+            border-color: var(--color-error);
+            background-color: rgba(220, 38, 38, 0.05);
+        }
+        
+        input[type="text"].success,
+        input[type="email"].success,
+        input[type="tel"].success,
+        select.success,
+        textarea.success {
+            border-color: var(--color-success);
+            background-color: rgba(22, 163, 74, 0.05);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-error {
+            color: var(--color-error);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        .form-error.show {
+            display: block;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            cursor: pointer;
+            accent-color: var(--color-accent);
+        }
+        
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: 400;
+            flex: 1;
+        }
+        
+        .form-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        .form-message {
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+            display: none;
+            font-weight: 500;
+        }
+        
+        .form-message.show {
+            display: block;
+        }
+        
+        .form-message.success {
+            background-color: rgba(22, 163, 74, 0.1);
+            color: #15803D;
+            border: 1px solid var(--color-success);
+        }
+        
+        .form-message.error {
+            background-color: rgba(220, 38, 38, 0.1);
+            color: #991B1B;
+            border: 1px solid var(--color-error);
+        }
+        
+        /* ========== CONTATO LAYOUT ========== */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .contact-item-icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+        
+        .contact-item-content h4 {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .contact-item-content p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        /* ========== MARQUEE ========== */
+        .marquee {
+            display: flex;
+            gap: var(--spacing-lg);
+            overflow: hidden;
+            background-color: var(--color-bg-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+        }
+        
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 150px;
+            height: 60px;
+            background-color: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            font-weight: 600;
+            color: var(--color-text-gray);
+            animation: scroll 60s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* ========== BOTÃO FLUTUANTE ========== */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-accent);
+            color: var(--color-bg-white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        .scroll-to-top.show {
+            display: flex;
+        }
+        
+        .scroll-to-top:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-4px);
+        }
+        
+        .scroll-to-top:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+        
+        /* ========== REDES SOCIAIS ========== */
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+        
+        .social-link:focus-visible {
+            outline: 2px solid #FFFFFF;
+            outline-offset: 2px;
+        }
+        
+        /* ========== BOTÃO FLUTUANTE WHATSAPP ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 6rem;
+            width: 60px;
+            height: 60px;
+            background-color: #00ff5e;
+            color: var(--color-bg-white);
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+            transition: var(--transition);
+            z-index: 999;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #20BA5A;
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-float:focus-visible {
+            outline: 2px solid #25D366;
+            outline-offset: 2px;
+        }
+        
+        /* ========== POLÍTICA DE PRIVACIDADE ========== */
+        .privacy-policy {
+            display: none;
+            margin-top: var(--spacing-2xl);
+            padding: var(--spacing-lg);
+            background-color: var(--color-bg-light);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--color-accent);
+        }
+        
+        .privacy-policy.show {
+            display: block;
+        }
+        
+        .privacy-policy h3 {
+            margin-top: var(--spacing-lg);
+        }
+        
+        .privacy-policy p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        /* ========== RESPONSIVIDADE ========== */
+        @media (max-width: 1024px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            
+            .header-container {
+                padding: var(--spacing-md);
+            }
+            
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: var(--color-primary);
+                padding: var(--spacing-lg);
+                gap: var(--spacing-md);
+                box-shadow: var(--shadow-lg);
+            }
+            
+            nav.active {
+                display: flex;
+            }
+            
+            .nav-toggle {
+                display: block;
+            }
+            
+            .hero {
+                grid-template-columns: 1fr;
+                padding: var(--spacing-xl) var(--spacing-lg);
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            :root {
+                --font-size-base: 15px;
+                --spacing-2xl: 2.5rem;
+                --spacing-xl: 2rem;
+            }
+            
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.5rem; }
+            h3 { font-size: 1.25rem; }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+            }
+            
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-buttons {
+                flex-direction: column;
+            }
+            
+            .form-buttons .btn {
+                width: 100%;
+            }
+            
+            .contact-item {
+                flex-direction: column;
+            }
+            
+            .scroll-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+                font-size: 1.25rem;
+            }
+            
+            .whatsapp-float {
+                bottom: 1rem;
+                right: 4.5rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            :root {
+                --font-size-base: 14px;
+                --spacing-2xl: 2rem;
+                --spacing-xl: 1.5rem;
+                --spacing-lg: 1.5rem;
+            }
+            
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.25rem; }
+            h3 { font-size: 1.125rem; }
+            
+            .header-container {
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+            
+            .logo {
+                font-size: 1.125rem;
+            }
+            
+            .header-cta {
+                display: none;
+            }
+            
+            nav {
+                top: 60px;
+            }
+            
+            main {
+                margin-top: 60px;
+            }
+            
+            .hero {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 0.95rem;
+            }
+            
+            .hero-image {
+                min-height: 200px;
+            }
+            
+            .section-header h2 {
+                font-size: 1.25rem;
+            }
+            
+            .carousel-item {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            .carousel-item blockquote {
+                font-size: 1rem;
+            }
+            
+            .cta-banner {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            section {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+            
+            footer {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+        }
+   .hero-logo {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Ajuste específico para mobile */
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 300px; /* tamanho ideal no mobile */
+    }
+}
+
+/* ===== LOGO DO HEADER ===== */
+.logo-img {
+    height: 45px;   /* tamanho da logo no menu */
+    width: auto;
+    display: block;
+}
+/* ======== RODAPÉ COM IMAGEM DE FUNDO ======== */
+
+.footer-bg {
+    width: 100%;
+    height: 250px;                 /* altura do bloco do rodapé */
+    background: url("IMAGENS/BG.jpg") center/cover no-repeat;
+    display: block;
+}
+
+/* ======== TAMANHO DA FONTE DO RODAPÉ ======== */
+
+footer {
+    font-size: 100px; /* tamanho geral */
+}
+
+footer h3 {
+    font-size: 30px; /* títulos */
+}
+
+footer p,
+footer a,
+footer li {
+    font-size: 20px; /* textos */
+}
+
+/* ======== AJUSTAR ÍCONES DAS REDES SOCIAIS ======== */
+.footer-social-icons a {
+    font-size: 28px;   /* aumenta o tamanho dos ícones SVG */
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.footer-social-icons img {
+    width: 40px; 
+    height: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="RGN Serviços Terceirizados">
+    <img src="IMAGENS/LOGOS TITULO.png" alt="RGN Serviços Terceirizados" class="logo-img">
+</a>
+
+            
+            <nav id="nav" role="navigation" aria-label="Navegação principal">
+                <a href="#sobre" style="color: #FFFFFF;">Sobre nós</a>
+                <a href="#servicos" style="color: #FFFFFF;">Serviços</a>
+                <a href="#beneficios" style="color: #FFFFFF;">Benefícios</a>
+                <a href="#depoimentos" style="color: #FFFFFF;">Depoimentos</a>
+                <a href="#trabalhe-conosco" style="color: #FFFFFF;">Trabalhe Conosco</a>
+                <a href="#contato" style="color: #FFFFFF;">Contato</a>
+            </nav>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-controls="nav" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="header-cta">
+                <a href="#contato" class="btn btn-primary btn-small">Solicite um Orçamento</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+    <div class="hero-content">
+
+        <!-- LOGO DO GRUPO RGN -->
+        <img src="IMAGENS/LOGOS TITULO.png" alt="Grupo RGN" class="hero-logo">
+                <div class="hero-but                    <a href="https://wa.me/5511949786255?text=Olá,%20gostaria%20de%20um%20orçamento%20dos%20serviços%20da%20RGN" class="btn btn-primary btn-small" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.335 1.236-3.356 2.259-1.02 1.02-1.756 2.117-2.259 3.355-.626 1.74-.922 3.56-.922 5.428 0 1.868.296 3.688.922 5.428.503 1.238 1.239 2.335 2.259 3.356 1.02 1.02 2.117 1.756 3.355 2.259 1.74.626 3.56.922 5.428.922 1.868 0 3.688-.296 5.428-.922 1.238-.503 2.335-1.239 3.356-2.259 1.02-1.02 1.756-2.117 2.259-3.355.626-1.74.922-3.56.922-5.428 0-1.868-.296-3.688-.922-5.428-.503-1.238-1.239-2.335-2.259-3.356-1.02-1.02-2.117-1.756-3.355-2.259-1.74-.626-3.56-.922-5.428-.922"/>
+                        </svg>
+                        Falar no WhatsApp
+                    </                    <a href="#contato" class="btn btn-secondary">Solicite um Orçamento</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <svg class="hero-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#16A34A;stop-opacity:0.3" />
+                            <stop offset="100%" style="stop-color:#15803D;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#grad1)" rx="20"/>
+                    <circle cx="100" cy="100" r="40" fill="#16A34A" opacity="0.4"/>
+                    <circle cx="300" cy="150" r="60" fill="#15803D" opacity="0.3"/>
+                    <circle cx="200" cy="300" r="50" fill="#16A34A" opacity="0.25"/>
+                    <path d="M 50 200 Q 100 150, 150 200 T 250 200 T 350 200" stroke="#16A34A" stroke-width="3" fill="none" opacity="0.4"/>
+                    <rect x="120" y="120" width="160" height="160" fill="none" stroke="#0B1F3A" stroke-width="2" opacity="0.3" rx="10"/>
+                </svg>
+            </div>
+        </section>
+        
+        <!-- ========== SOBRE NÓS ========== -->
+        <section id="sobre" style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre nós</h2>
+                    <p>Conheça a RGN e como transformamos operações através de soluções terceirizadas.</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A RGN oferece soluções terceirizadas com foco em eficiência operacional, segurança e padronização. Nossa equipe é treinada, supervisionada e orientada por indicadores de performance para que sua empresa ganhe tempo, reduza custos e mantenha a qualidade.</p>
+                        <p>Com mais de uma década de experiência, consolidamos parcerias duradouras baseadas em confiança, profissionalismo e resultados mensuráveis.</p>
+                    </div>
+                    
+                    <div class="pillars">
+                        <div class="pillar">
+                            <svg class="pillar-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 50 25 L 65 40 L 60 40 L 60 65 L 40 65 L 40 40 L 35 40 Z" fill="#16A34A"/>
+                            </svg>
+                            <h4>Confiança</h4>
+                            <p>Parceiros de longa data que confiam em nossa entrega consistente.</p>
+                        </div>
+                        
+                        <div class="pillar">
+                            <svg class="pillar-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 30 70 L 50 30 L 70 70 M 40 55 L 60 55 M 45 45 L 55 45" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <h4>Profissionalismo</h4>
+                            <p>Equipes treinadas e processos padronizados em todas as operações.</p>
+                        </div>
+                        
+                        <div class="pillar">
+                            <svg class="pillar-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 35 50 L 45 60 L 65 35" stroke="#16A34A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h4>Resultado</h4>
+                            <p>Indicadores de performance e ROI comprovado para cada cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== SERVIÇOS ========== -->
+        <section id="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções completas para todas as necessidades operacionais da sua empresa.</p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <!-- Gerenciamento de Risco -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 50 25 L 70 35 L 70 55 Q 50 70 50 70 Q 30 55 30 35 L 50 25" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            <path d="M 45 50 L 48 55 L 55 45" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Gerenciamento de Risco</h3>
+                        <p>Análise e mitigação de riscos operacionais para sua segurança.</p>
+                        <ul>
+                            <li>Avaliação de riscos</li>
+                            <li>Planos de contingência</li>
+                            <li>Monitoramento contínuo</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Controle de Acesso -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <rect x="30" y="30" width="40" height="50" stroke="#16A34A" stroke-width="2" fill="none" rx="3"/>
+                            <circle cx="50" cy="50" r="3" fill="#16A34A"/>
+                            <path d="M 35 35 L 65 35 M 35 65 L 65 65" stroke="#16A34A" stroke-width="1"/>
+                        </svg>
+                        <h3>Controle de Acesso</h3>
+                        <p>Sistemas modernos para controle eficiente de entrada e saída.</p>
+                        <ul>
+                            <li>Controle 12/36</li>
+                            <li>Cadastro de visitantes</li>
+                            <li>Rondas de segurança</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Agente de Portaria -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <circle cx="50" cy="35" r="8" fill="#16A34A"/>
+                            <path d="M 35 45 L 40 60 M 50 45 L 50 65 M 65 45 L 60 60" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Agente de Portaria</h3>
+                        <p>Profissionais treinados para atendimento e segurança.</p>
+                        <ul>
+                            <li>Atendimento ao público</li>
+                            <li>Identificação de visitantes</li>
+                            <li>Comunicação eficiente</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Auxiliar de Limpeza -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 35 60 L 40 30 L 50 35 L 60 30 L 65 60 M 40 60 L 40 70 M 50 60 L 50 70 M 60 60 L 60 70" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Auxiliar de Limpeza</h3>
+                        <p>Equipes especializadas em limpeza e higienização.</p>
+                        <ul>
+                            <li>Limpeza diária</li>
+                            <li>Higienização profunda</li>
+                            <li>Áreas especializadas</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Auxiliar de Manutenção -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 40 50 L 60 50 M 50 40 L 50 60 M 35 35 L 65 65 M 65 35 L 35 65" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Auxiliar de Manutenção</h3>
+                        <p>Manutenção preventiva e corretiva de infraestrutura.</p>
+                        <ul>
+                            <li>Reparos gerais</li>
+                            <li>Manutenção preventiva</li>
+                            <li>Inspeções técnicas</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Zeladoria -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 50 25 L 70 35 L 70 65 Q 50 75 50 75 Q 30 65 30 35 L 50 25" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            <circle cx="50" cy="50" r="5" fill="#16A34A"/>
+                        </svg>
+                        <h3>Zeladoria</h3>
+                        <p>Cuidado integral com áreas comuns e conservação.</p>
+                        <ul>
+                            <li>Conservação geral</li>
+                            <li>Vigilância de áreas</li>
+                            <li>Manutenção de espaços</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Recepcionista -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <rect x="30" y="30" width="40" height="40" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            <line x1="35" y1="40" x2="65" y2="40" stroke="#16A34A" stroke-width="1"/>
+                            <line x1="35" y1="50" x2="65" y2="50" stroke="#16A34A" stroke-width="1"/>
+                            <line x1="35" y1="60" x2="55" y2="60" stroke="#16A34A" stroke-width="1"/>
+                        </svg>
+                        <h3>Recepcionista</h3>
+                        <p>Atendimento profissional e organização administrativa.</p>
+                        <ul>
+                            <li>Atendimento ao público</li>
+                            <li>Gestão de agenda</li>
+                            <li>Suporte administrativo</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                    
+                    <!-- Manobrista -->
+                    <article class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <rect x="30" y="45" width="40" height="20" stroke="#16A34A" stroke-width="2" fill="none" rx="2"/>
+                            <circle cx="37" cy="60" r="3" fill="#16A34A"/>
+                            <circle cx="63" cy="60" r="3" fill="#16A34A"/>
+                            <path d="M 35 45 L 40 35 M 65 45 L 60 35" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Manobrista</h3>
+                        <p>Serviço profissional de estacionamento e manobra.</p>
+                        <ul>
+                            <li>Manobra de veículos</li>
+                            <li>Controle de estacionamento</li>
+                            <li>Atendimento ao cliente</li>
+                        </ul>
+                        <a href="#contato" class="btn btn-secondary btn-small">Saiba mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== BENEFÍCIOS ========== -->
+        <section id="beneficios" style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que escolher a RGN?</h2>
+                    <p>Benefícios comprovados que transformam sua operação.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 30 50 L 45 65 L 70 35" stroke="#16A34A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Redução de Custos</h3>
+                        <p>Modelos contratuais sob medida e maior previsibilidade orçamentária.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="8" fill="#16A34A"/>
+                            <path d="M 50 25 L 50 75 M 25 50 L 75 50" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Equipe Qualificada</h3>
+                        <p>Treinamento contínuo e checklists operacionais padronizados.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 35 50 L 50 35 L 65 50 L 50 65 Z" fill="#16A34A" opacity="0.3"/>
+                            <path d="M 40 50 L 50 40 L 60 50 L 50 60 Z" stroke="#16A34A" stroke-width="2" fill="none"/>
+                        </svg>
+                        <h3>Flexibilidade</h3>
+                        <p>Escopo, horários e SLAs ajustáveis conforme suas necessidades.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 50 30 L 60 50 L 50 70 L 40 50 Z" fill="#16A34A"/>
+                        </svg>
+                        <h3>Foco no Core Business</h3>
+                        <p>Sua equipe interna se concentra no que realmente importa.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M 50 30 C 60 30 70 40 70 50 C 70 60 60 70 50 70 C 40 70 30 60 30 50 C 30 40 40 30 50 30" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            <circle cx="50" cy="50" r="5" fill="#16A34A"/>
+                        </svg>
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Canal dedicado e revisões periódicas de performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== PROVA SOCIAL ========== -->
+        <section class="empresas-section">
+    <h2>Empresas Parceiras</h2>
+
+    <div class="logo-marquee">
+       <div class="logo-track">
+        
+
+    <!-- Lista original -->
+    <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a>
+
+    <!-- Repetição para loop perfeito -->
+     <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a>
+     <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a> <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a> <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a> <a href="https://www.instagram.com/eagles_labz?igsh=MXBucmc4NGF5amFqcQ==" target="_blank" rel="noopener">
+        <img src="IMAGENS/eagleslabz.jpg" alt="Eagles Labz">
+    </a>
+
+    <a href="https://www.instagram.com/jomar_uniformes" target="_blank" rel="noopener">
+        <img src="IMAGENS/jomaruniformes.webp" alt="jomaruniformes">
+    </a>
+
+    <a href="https://www.facebook.com/ZuccoLimp/" target="_blank" rel="noopener">
+        <img src="IMAGENS/ZUCCO.png" alt="ZUCCO">
+
+    <a href="https://alfasegsegurancadotrabalho.com.br/" target="_blank" rel="noopener">
+        <img src="IMAGENS/alfaseg.jpg" alt="alfasegsegurancadotrabalho">
+    </a>
+
+     <a href="https://www.instagram.com/instarseg_?igsh=cTV5ZG1sczQ0OXYx" target="_blank" rel="noopener">
+        <img src="IMAGENS/INSTARSEG.png" alt="INSTARSEG">
+    </a>
+
+    </div>
+
+        <!-- ========== DEPOIMENTOS ========== -->
+        <section id="depoimentos" style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O que nossos clientes dizem</h2>
+                    <p>Histórias de sucesso e transformação operacional.</p>
+                </div>
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item active">
+                            <blockquote>"A RGN profissionalizou nossa operação e reduziu chamados em 28%. Excelente atendimento!"</blockquote>
+                            <div class="author">Marina S.</div>
+                            <div class="role">Gerente de Facilities – Empresa Tech</div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <blockquote>"Equipe ágil, comprometida e muito responsável. Contrato renovado sem dúvidas."</blockquote>
+                            <div class="author">João P.</div>
+                            <div class="role">Administrador Predial – Condomínio Premium</div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <blockquote>"Desde que contratamos a RGN, a qualidade dos serviços melhorou significativamente e os custos caíram."</blockquote>
+                            <div class="author">Ana C.</div>
+                            <div class="role">Diretora Administrativa – Indústria</div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="carouselPrev" aria-label="Depoimento anterior" aria-controls="carousel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn" id="carouselNext" aria-label="Próximo depoimento" aria-controls="carousel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== CTA BANNER ========== -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Pronto para simplificar sua operação e aumentar resultados?</h2>
+                <a href="#contato" class="btn btn-white">Solicite seu orçamento agora</a>
+            </div>
+        </section>
+        
+        <!-- ========== TRABALHE CONOSCO ========== -->
+        <section id="trabalhe-conosco" style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trabalhe Conosco</h2>
+                    <p>Faça parte da nossa equipe de profissionais especializados em serviços terceirizados.</p>
+                </div>
+
+        
+                
+                <div class="contact-wrapper">
+                    <!-- Formulário de Currículo -->
+                    <form id="jobForm" method="POST" action="#" novalidate enctype="multipart/form-data">
+                        <div class="form-message" id="jobFormMessage" role="alert"></div>
+                        
+                        <div class="form-group">
+                            <label for="job-name">Nome completo *</label>
+                            <input type="text" id="job-name" name="name" required aria-required="true" aria-describedby="jobNameError">
+                            <div class="form-error" id="jobNameError">Por favor, insira seu nome.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="job-email">E-mail *</label>
+                            <input type="email" id="job-email" name="email" required aria-required="true" aria-describedby="jobEmailError">
+                            <div class="form-error" id="jobEmailError">Por favor, insira um e-mail válido.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="job-phone">Telefone *</label>
+                            <input type="tel" id="job-phone" name="phone" placeholder="(11) 99999-9999" required aria-required="true" aria-describedby="jobPhoneError">
+                            <div class="form-error" id="jobPhoneError">Por favor, insira um telefone válido.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="job-position">Posição de Interesse *</label>
+                            <select id="job-position" name="position" required aria-required="true">
+                                <option value="">Selecione uma posição</option>
+                                <option value="gerenciamento-risco">Gerenciamento de Risco</option>
+                                <option value="controle-acesso">Controle de Acesso</option>
+                                <option value="agente-portaria">Agente de Portaria</option>
+                                <option value="auxiliar-limpeza">Auxiliar de Limpeza</option>
+                                <option value="auxiliar-manutencao">Auxiliar de Manutenção</option>
+                                <option value="zeladoria">Zeladoria</option>
+                                <option value="recepcionista">Recepcionista</option>
+                                <option value="manobrista">Manobrista</option>
+                                <option value="outra">Outra</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="job-experience">Experiência Profissional</label>
+                            <textarea id="job-experience" name="experience" placeholder="Descreva sua experiência profissional..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="job-curriculum">Enviar Currículo (PDF, DOC ou DOCX) *</label>
+                            <input type="file" id="job-curriculum" name="curriculum" accept=".pdf,.doc,.docx" required aria-required="true" aria-describedby="jobCurriculumError">
+                            <div class="form-error" id="jobCurriculumError">Por favor, envie seu currículo em PDF ou Word.</div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="job-privacy" name="privacy" required aria-required="true" aria-describedby="jobPrivacyError">
+                            <label for="job-privacy">Concordo com o tratamento dos meus dados conforme a <a href="#privacy-policy" onclick="togglePrivacy(event)">Política de Privacidade</a>.</label>
+                            <div class="form-error" id="jobPrivacyError">Você deve concordar com a política de privacidade.</div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Enviar Currículo</button>
+                            <a href="https://wa.me/5511949786255?text=Olá,%20tenho%20interesse%20em%20trabalhar%20na%20RGN" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+                        </div>
+                    </form>
+                    
+                    <!-- Informações sobre Oportunidades -->
+                    <aside class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="8" fill="#16A34A"/>
+                                <path d="M 35 45 L 40 60 M 50 45 L 50 65 M 65 45 L 60 60" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Por que trabalhar conosco?</h4>
+                                <p>Somos uma empresa em crescimento com oportunidades de desenvolvimento profissional, equipe comprometida e ambiente de trabalho respeitoso.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 35 45 L 50 60 L 65 45 L 50 35 Z" fill="#16A34A" opacity="0.3"/>
+                                <path d="M 35 45 L 50 60 L 65 45" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Benefícios</h4>
+                                <p>Oferecemos treinamento contínuo, ambiente profissional, equipe dedicada e oportunidades de crescimento na carreira.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 30 35 L 70 35 L 70 65 Q 50 75 50 75 Q 30 65 30 65 Z" stroke="#16A34A" stroke-width="2" fill="none"/>
+                                <path d="M 30 35 L 50 50 L 70 35" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Contato RH</h4>
+                                <p><strong>Escritório:</strong> <a href="tel:+5511949786255">(11) 94978-6255</a><br><strong>Roberto:</strong> <a href="tel:+5511982904199">(11) 98290-4199</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 50 35 L 50 50 L 60 60" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta<br>08:00 - 17:00</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== CONTATO / FORMULÁRIO ========== -->
+        <section id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em contato conosco</h2>
+                    <p>Preencha o formulário ou fale conosco pelos canais disponíveis.</p>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <!-- Formulário -->
+                    <form id="contactForm" method="POST" action="#" novalidate>
+                        <div class="form-message" id="formMessage" role="alert"></div>
+                        
+                        <div class="form-group">
+                            <label for="name">Nome completo *</label>
+                            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="nameError">
+                            <div class="form-error" id="nameError">Por favor, insira seu nome.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="emailError">
+                            <div class="form-error" id="emailError">Por favor, insira um e-mail válido.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required aria-required="true" aria-describedby="phoneError">
+                            <div class="form-error" id="phoneError">Por favor, insira um telefone válido.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Serviço de Interesse *</label>
+                            <select id="service" name="service" required aria-required="true">
+                                <option value="">Selecione um serviço</option>
+                                <option value="limpeza">Limpeza e Conservação</option>
+                                <option value="portaria">Portaria e Controle de Acesso</option>
+                                <option value="seguranca">Segurança Patrimonial</option>
+                                <option value="manutencao">Manutenção Predial</option>
+                                <option value="apoio">Apoio Administrativo</option>
+                                <option value="consultoria">Consultoria Operacional</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" required aria-required="true" aria-describedby="messageError"></textarea>
+                            <div class="form-error" id="messageError">Por favor, insira sua mensagem.</div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required aria-required="true" aria-describedby="privacyError">
+                            <label for="privacy">Concordo com o tratamento dos meus dados conforme a <a href="#privacy-policy" onclick="togglePrivacy(event)">Política de Privacidade</a>.</label>
+                            <div class="form-error" id="privacyError">Você deve concordar com a política de privacidade.</div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <a href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20orçamento%20da%20RGN" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+                        </div>
+                    </form>
+                    
+                    <!-- Informações de Contato -->
+                    <aside class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 50 30 C 58 30 65 37 65 45 C 65 60 50 75 50 75 C 50 75 35 60 35 45 C 35 37 42 30 50 30" stroke="#16A34A" stroke-width="2" fill="none"/>
+                                <circle cx="50" cy="45" r="5" fill="#16A34A"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Endereço</h4>
+                                <p>Est. Pres. Juscelino Kubitscheck, 5621<br>Guarulhos – SP – CEP: 07252-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="12" fill="#16A34A" opacity="0.3"/>
+                                <path d="M 35 55 Q 35 45 50 45 Q 65 45 65 55 L 65 70 L 35 70 Z" fill="#16A34A" opacity="0.3"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Roberto - Gerente ADM</h4>
+                                <p><strong>Telefone:</strong> <a href="tel:+5511982904199">(11) 98290-4199</a><br><strong>E-mail:</strong> <a href="mailto:robertorgn@outlook.com">robertorgn@outlook.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <circle cx="50" cy="35" r="12" fill="#16A34A" opacity="0.3"/>
+                                <path d="M 35 55 Q 35 45 50 45 Q 65 45 65 55 L 65 70 L 35 70 Z" fill="#16A34A" opacity="0.3"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Renato - Gerente Operacional</h4>
+                                <p><strong>Telefone:</strong> <a href="tel:+5511948846149">(11) 94884-6149</a><br><strong>E-mail:</strong> <a href="mailto:renatorgn@hotmail.com">renatorgn@hotmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <rect x="30" y="35" width="40" height="30" stroke="#16A34A" stroke-width="2" fill="none" rx="3"/>
+                                <path d="M 40 50 L 45 55 L 60 40" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Escritório</h4>
+                                <p><strong>Telefone:</strong> <a href="tel:+5511949786255">(11) 94978-6255</a><br><strong>E-mail:</strong> <a href="mailto:escritoriorgn@outlook.com">escritoriorgn@outlook.com</a></p>
+                                <a href="mailto:fatimargn02@hotmail.com">fatimargn02@hotmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="50" cy="50" r="45" fill="#16A34A" opacity="0.1" stroke="#16A34A" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="#16A34A" stroke-width="2"/>
+                                <path d="M 50 35 L 50 50 L 60 60" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="contact-item-content">
+                                <h4>Horário Comercial</h4>
+                                <p>Segunda a Sexta<br>08:00 - 17:00</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                
+                <!-- Política de Privacidade (Âncora) -->
+                <div id="privacy-policy" class="privacy-policy">
+                    <h3>Política de Privacidade</h3>
+                    <p><strong>Última atualização:</strong> Outubro de 2025</p>
+                    
+                    <h4>1. Introdução</h4>
+                    <p>A RGN Serviços Terceirizados ("Empresa") respeita sua privacidade e está comprometida em proteger seus dados pessoais. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações.</p>
+                    
+                    <h4>2. Dados Coletados</h4>
+                    <p>Coletamos dados pessoais quando você preenche nosso formulário de contato, incluindo: nome, e-mail, telefone, empresa e mensagem. Esses dados são necessários para responder suas solicitações e fornecer orçamentos.</p>
+                    
+                    <h4>3. Finalidade do Tratamento</h4>
+                    <p>Seus dados são utilizados exclusivamente para: (a) responder suas consultas; (b) enviar orçamentos e propostas; (c) manter contato sobre nossos serviços; (d) cumprir obrigações legais.</p>
+                    
+                    <h4>4. Base Legal (LGPD)</h4>
+                    <p>O tratamento de seus dados é baseado no consentimento que você fornece ao aceitar esta política e no interesse legítimo da Empresa em estabelecer relações comerciais.</p>
+                    
+                    <h4>5. Compartilhamento de Dados</h4>
+                    <p>Não compartilhamos seus dados com terceiros, exceto quando legalmente obrigado ou quando necessário para prestar nossos serviços.</p>
+                    
+                    <h4>6. Retenção de Dados</h4>
+                    <p>Mantemos seus dados pelo período necessário para cumprir as finalidades descritas ou conforme exigido por lei.</p>
+                    
+                    <h4>7. Seus Direitos</h4>
+                    <p>Você tem direito a acessar, corrigir, deletar ou solicitar a portabilidade de seus dados. Para exercer esses direitos, entre em contato conosco em contato@rgn.com.br.</p>
+                    
+                    <h4>8. Segurança</h4>
+                    <p>Implementamos medidas técnicas e administrativas para proteger seus dados contra acesso não autorizado, alteração ou destruição.</p>
+                    
+                    <h4>9. Contato</h4>
+                    <p>Para dúvidas sobre esta Política de Privacidade, entre em contato: <a href="mailto:contato@rgn.com.br">contato@rgn.com.br</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); margin-bottom: var(--spacing-2xl);">
+                <!-- Logo e Descrição -->
+                <div>
+                    <div class="logo" style="margin-bottom: var(--spacing-md);">
+                        <span class="logo-text">RGN</span>
+                        <span class="logo-badge" style="background-color: #0B1F3A; font-size: 0.5rem;" aria-hidden="true">9 SERV</span>
+                    </div>
+                    <p style="margin: 0; font-size: 0.95rem; color: #FFFFFF;">Soluções terceirizadas que transformam operações e geram resultados.</p>
+                </div>
+                
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 style="color: var(--color-bg-white); margin-bottom: var(--spacing-md);">Links Rápidos</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="#sobre" style="color: #FFFFFF;">Sobre nós</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="#servicos" style="color: #FFFFFF;">Serviços</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="#beneficios" style="color: #FFFFFF;">Benefícios</a></li>
+                        <li style="margin-bottom: var(--spacing-sm);"><a href="#contato" style="color: #FFFFFF;">Contato</a></li>
+                        <li><a href="#privacy-policy" onclick="togglePrivacy(event)" style="color: #FFFFFF;">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h4 style="color: var(--color-bg-white); margin-bottom: var(--spacing-md);">Contato</h4>
+                    <p style="margin-bottom: var(--spacing-sm); font-size: 0.95rem; color: #FFFFFF;">
+                        <strong>Escritório:</strong> <a href="tel:+5511949786255" style="color: #FFFFFF;">(11) 94978-6255</a>
+                    </p>
+                    <p style="margin-bottom: var(--spacing-sm); font-size: 0.95rem; color: #FFFFFF;">
+                        <strong>Roberto:</strong> <a href="tel:+5511982904199" style="color: #FFFFFF;">(11) 98290-4199</a>
+                    </p>
+                    <p style="margin-bottom: var(--spacing-sm); font-size: 0.95rem; color: #FFFFFF;">
+                        <strong>Renato:</strong> <a href="tel:+5511948846149" style="color: #FFFFFF;">(11) 94884-6149</a>
+                    </p>
+                    <p style="margin: 0; font-size: 0.95rem; color: #FFFFFF;">
+                        <strong>Endereço:</strong> Est. Pres. Juscelino Kubitscheck, 5621, Guarulhos – SP
+                    </p>
+                </div>
+                
+                <!-- Redes Sociais -->
+                <div>
+                    <h4 style="color: var(--color-bg-white); margin-bottom: var(--spacing-md);">Redes Sociais</h4>
+                    <div style="display: flex; gap: var(--spacing-md); align-items: center;">
+                        <a href="https://www.facebook.com/share/1BgypKDzxt/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook do Grupo RGN">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/gruporgn?igsh=dno5cmxsdzdyNzZo" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram do Grupo RGN">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dados da Empresa -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: var(--spacing-lg); text-align: center; font-size: 0.9rem; color: #FFFFFF;">
+                <p style="margin: 0; color: #FFFFFF;">
+                    © 2025 RGN Serviços Terceirizados. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ========== BOTÕES FLUTUANTES ========== -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo da página">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <a href="https://wa.me/+5511949786255"
+   class="whatsapp-float"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Entre em contato">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 01-4.9-1.3L2 22l1.3-5A9.96 9.96 0 012 12z"/>
+  </svg>
+
+
+</a>
+
+    
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ========== MENU RESPONSIVO ==========
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        
+        navToggle.addEventListener('click', () => {
+            const isActive = nav.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isActive);
+        });
+        
+        // Fechar menu ao clicar em um link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // ========== HEADER SCROLL EFFECT ==========
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // ========== CARROSSEL ==========
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+        
+        document.getElementById('carouselNext').addEventListener('click', nextSlide);
+        document.getElementById('carouselPrev').addEventListener('click', prevSlide);
+        
+        // Auto-advance carousel a cada 8 segundos
+        setInterval(nextSlide, 8000);
+        
+        // ========== BOTÃO VOLTAR AO TOPO ==========
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // ========== MÁSCARA DE TELEFONE ==========
+        const phoneInput = document.getElementById('phone');
+        
+        phoneInput.addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.length > 11) {
+                value = value.slice(0, 11);
+            }
+            
+            if (value.length > 0) {
+                if (value.length <= 2) {
+                    value = `(${value}`;
+                } else if (value.length <= 7) {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+                } else {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+                }
+            }
+            
+            e.target.value = value;
+        });
+        
+        // ========== VALIDAÇÃO DO FORMULÁRIO ==========
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+        
+        function validatePhone(phone) {
+            const re = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
+            return re.test(phone);
+        }
+        
+        function clearFieldError(fieldId) {
+            const field = document.getElementById(fieldId);
+            const error = document.getElementById(`${fieldId}Error`);
+            field.classList.remove('error', 'success');
+            error.classList.remove('show');
+        }
+        
+        function setFieldError(fieldId) {
+            const field = document.getElementById(fieldId);
+            const error = document.getElementById(`${fieldId}Error`);
+            field.classList.add('error');
+            error.classList.add('show');
+        }
+        
+        function setFieldSuccess(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.classList.add('success');
+        }
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Limpar mensagens anteriores
+            formMessage.classList.remove('show', 'success', 'error');
+            
+            // Limpar erros anteriores
+            ['name', 'email', 'phone', 'service', 'message', 'privacy'].forEach(id => {
+                clearFieldError(id);
+            });
+            
+            // Validar campos
+            let isValid = true;
+            
+            const name = document.getElementById('name').value.trim();
+            if (!name) {
+                setFieldError('name');
+                isValid = false;
+            } else {
+                setFieldSuccess('name');
+            }
+            
+            const email = document.getElementById('email').value.trim();
+            if (!validateEmail(email)) {
+                setFieldError('email');
+                isValid = false;
+            } else {
+                setFieldSuccess('email');
+            }
+            
+            const phone = document.getElementById('phone').value.trim();
+            if (!validatePhone(phone)) {
+                setFieldError('phone');
+                isValid = false;
+            } else {
+                setFieldSuccess('phone');
+            }
+            
+            const service = document.getElementById('service').value;
+            if (!service) {
+                setFieldError('service');
+                isValid = false;
+            } else {
+                setFieldSuccess('service');
+            }
+            
+            const message = document.getElementById('message').value.trim();
+            if (!message) {
+                setFieldError('message');
+                isValid = false;
+            } else {
+                setFieldSuccess('message');
+            }
+            
+            const privacy = document.getElementById('privacy').checked;
+            if (!privacy) {
+                setFieldError('privacy');
+                isValid = false;
+            }
+            
+            // Se válido, exibir mensagem de sucesso
+            if (isValid) {
+                formMessage.textContent = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
+                formMessage.classList.add('show', 'success');
+                
+                // Limpar formulário
+                contactForm.reset();
+                
+                // Limpar estados de sucesso após 3 segundos
+                setTimeout(() => {
+                    ['name', 'email', 'phone', 'service', 'message'].forEach(id => {
+                        clearFieldError(id);
+                    });
+                    formMessage.classList.remove('show');
+                }, 3000);
+                
+                // Scroll para mensagem
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+        
+        // ========== TOGGLE POLÍTICA DE PRIVACIDADE ==========
+        function togglePrivacy(e) {
+            e.preventDefault();
+            const privacySection = document.getElementById('privacy-policy');
+            privacySection.classList.toggle('show');
+            
+            if (privacySection.classList.contains('show')) {
+                privacySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        // ========== VALIDACAO DO FORMULARIO DE CURRICULO ==========
+        const jobForm = document.getElementById('jobForm');
+        const jobFormMessage = document.getElementById('jobFormMessage');
+        
+        jobForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            jobFormMessage.classList.remove('show', 'success', 'error');
+            
+            let isValid = true;
+            const jobName = document.getElementById('job-name').value.trim();
+            const jobEmail = document.getElementById('job-email').value.trim();
+            const jobPhone = document.getElementById('job-phone').value.trim();
+            const jobPosition = document.getElementById('job-position').value;
+            const jobCurriculum = document.getElementById('job-curriculum').files.length;
+            const jobPrivacy = document.getElementById('job-privacy').checked;
+            
+            if (!jobName) { setFieldError('job-name'); isValid = false; } else { setFieldSuccess('job-name'); }
+            if (!validateEmail(jobEmail)) { setFieldError('job-email'); isValid = false; } else { setFieldSuccess('job-email'); }
+            if (!validatePhone(jobPhone)) { setFieldError('job-phone'); isValid = false; } else { setFieldSuccess('job-phone'); }
+            if (!jobPosition) { setFieldError('job-position'); isValid = false; } else { setFieldSuccess('job-position'); }
+            if (!jobCurriculum) { setFieldError('job-curriculum'); isValid = false; } else { setFieldSuccess('job-curriculum'); }
+            if (!jobPrivacy) { setFieldError('job-privacy'); isValid = false; }
+            
+            if (isValid) {
+                jobFormMessage.textContent = 'Curriculo enviado com sucesso! Obrigado pelo interesse. Em breve entraremos em contato.';
+                jobFormMessage.classList.add('show', 'success');
+                jobForm.reset();
+                setTimeout(() => { jobFormMessage.classList.remove('show'); }, 3000);
+                jobFormMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+        
+        const jobPhoneInput = document.getElementById('job-phone');
+        jobPhoneInput.addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            if (value.length > 0) {
+                if (value.length <= 2) {
+                    value = `(${value}`;
+                } else if (value.length <= 7) {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+                } else {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+                }
+            }
+            e.target.value = value;
+        });
+        
+        // ========== GOOGLE TAG MANAGER PLACEHOLDER ==========
+        // GTM: Substituir 'GTM-XXXXXXX' pelo seu ID de container
+        /*
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX');
+        */
+    </script>
+    
+    <!-- JSON-LD Structured Data (LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "RGN Serviços Terceirizados",
+        "description": "Soluções terceirizadas em limpeza, portaria, segurança, manutenção predial e apoio administrativo.",
+        "url": "https://rgn-servicos.com.br",
+        "telephone": "+5511999999999",
+        "email": "contato@rgn.com.br",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Exemplo, 123 – Centro",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "01000-000",
+            "addressCountry": "BR"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "areaServed": "São Paulo",
+        "priceRange": "$$",
+        "image": "https://rgn-servicos.com.br/og-image.png",
+        "sameAs": []
+    }
+    </script>
+</body>
+</html>
